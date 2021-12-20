@@ -13,3 +13,5 @@
     kernel이라는 hyper-parameter는 알고리즘에 사용할 커널 유형을 지정한다. 필자는 여기서 'poly'를 선택하였다.
     또한 kernel을 'poly'로 하면, 또 다른 hyper-parameter인 degree를 지정할 수 있게 된다. 여기서 default값인 3이 아닌 것들을 넣어보면 모두 default일 때보다 더 좋지 않은 accuracy를 
     내는 것을 알 수 있으므로 dgree는 default값인 3으로 유지시킨다.
+5. Explanation of code
+   svc객체를 만든다(kernel = 'poly') -> fit을 이용하여 훈련시킨다 -> predict를 이용해서 새로운 데이터를 넣어본다 -> 이 predict와 y_test를 이용하여 accuracy를 측정한다.
